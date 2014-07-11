@@ -98,7 +98,7 @@ class CakeTestSuiteDispatcher {
 			$value = $this->_testCaseList();
 		}
 
-		$output = ob_get_clean();
+	//	$output = ob_get_clean();
 		echo $output;
 		return $value;
 	}
