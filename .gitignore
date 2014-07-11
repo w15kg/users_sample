@@ -8,6 +8,7 @@
 /build
 /dist
 /tags
+/app/Plugin
 
 # OS generated files #
 ######################
