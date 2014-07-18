@@ -99,7 +99,7 @@ class CakeTestSuiteDispatcher {
 		}
 
 	//	$output = ob_get_clean();
-		echo $output;
+	//	echo $output;
 		return $value;
 	}
 
