@@ -70,6 +70,9 @@ Cache::config('default', array('engine' => 'File'));
  *
  */
 CakePlugin::load('DebugKit');
+CakePlugin::load('Users' ,array(
+	'routes' => true
+));
 
 /**
  * You can attach event listeners to the request lifecycle as Dispatcher Filter. By default CakePHP bundles two filters:
@@ -92,6 +95,9 @@ Configure::write('Dispatcher.filters', array(
 	'AssetDispatcher',
 	'CacheDispatcher'
 ));
+//Configure::write('Users.emailConfig', 'default');
+Configure::write('Users.emailConfig', 'smtp');
+Configure::write('App.defaultEmail','no-reply@example.com');
 
 /**
  * Configures default file logging options
